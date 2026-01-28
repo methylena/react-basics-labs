@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Project = (props) => {
+const Task = (props) => {
     
     return (
         <div className='card'>
         <p className='title'>{props.title}</p>
         <p>Due: {props.deadline}</p>
+        <p>{props.description}</p>
         <p>{props.children}</p>
         </div>
     )
 }
 
-export default Project;
+export default Task;
