@@ -10,6 +10,7 @@ const Task = (props) => {
         <p>Due: {props.deadline}</p>
         <p>{props.description}</p>
         <p>{props.children}</p>
+        <p className='task-priority'>{props.priority}</p>
         </div>
     )
 }
