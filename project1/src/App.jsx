@@ -19,7 +19,6 @@ function App() {
     console.log(`${taskIndex} ${tasks[taskIndex].done}`);
   }
 
-
   return (
     <div className="container">
       <h1>Tasky</h1>
@@ -30,16 +29,14 @@ function App() {
       deadline={task.deadline}
       key={task.id}
       priority={task.priority}
+      done={task.done}
       markDone={() => doneHandler(index)}
       
     />
     
   ))} 
- <button onClick={props.markDone} className='doneButton'>Done</button>
-    </div>
-  );
+</div>
 
-
-}
+)}
 
 export default App;
