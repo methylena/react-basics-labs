@@ -10,3 +10,11 @@ db.animals.insertOne([
 db.animals.find(
   {species:"Canine"}, {gender: "Male"}
   ).pretty()
+
+  db.animals.find(
+    {"shelterLocation.building": "St. Francis"})
+
+    db.animals.find(
+      {tags:"needs training"}, {_id:0,breed:1}).pretty()
+
+      db.animals.countDocuments({tags: "friendly"})
